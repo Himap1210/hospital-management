@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+{% load static  %}
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+   
+    <body>
+    {% block  content%}      <div id="contact"class=" container my-5 pb-5" >
+        <div class="container text-center mt-5 py-5">
+        <h1>Contact Us</h1><hr class="mx-auto">
+        </div>
+      <div class="container text-center  ">
+        <h3 >Give Us a Message</h3>
+        <p class="mx-5 px-5">
+       Get answers to all your questions about our online service here 24*7</p>
+      </div>
+      <div class="container w-10 text-center bg-info my-5 py-5">
+        <div class="row">
+            <div class="col-lg-6 col-md-12">
+      <form action="" method="POST" w=30>
+          {% csrf_token %}
+          {{form|crispy}}
+
+        <button class="btn btn-primary" type="submit">submit</button> 
+      </form>
+    </div>
+    <div class="col-lg-6 col-md-12">
+        <img src="{%static './img/pexel.jpg' %}" alt="..."  height="400px" width="100%">
+    </div>
+    </div>
+  </div>   
+      {% endblock %}  
+        
+        <script src="" async defer></script>
+    </body>
+</html>

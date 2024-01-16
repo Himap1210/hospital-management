@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body> 
+        {% block content %}
+     
+        {% for d in doc %}
+        <div class="container text-center">
+
+      <div class="card text-center" style="width:18rem;display:inline-block;">
+        <img src="{{d.doc_image.url}}"  class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">{{d.doc_name}}</h5>
+            <p class="card-title">{{d.doc_spe}}</p>
+            <h6>{{d.dep_name}}</h6>
+        </div>
+      </div>
+      {% endfor%}
+      {% endblock %}
+        
+        <script src="" async defer></script>
+    </body>
+</html>

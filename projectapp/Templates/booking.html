@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        {% block content%}
+        <h1> make an appoinment</h1>
+        <div class="container w=20 text-center bg-success my-5">
+        
+        <form action="" method="POST" w=10>
+             {% csrf_token %}
+            {% comment %} {{form.as_p}} {% endcomment %}
+            {{form|crispy}}
+
+            <button class="btn btn-info" type='submit'>submit</button>
+        </div>
+        <hr>
+        
+        
+        <script src="" async defer></script>
+    </form>
+    {% endblock %}
+    </body>
+</html>

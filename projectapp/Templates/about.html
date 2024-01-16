@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+{% load static %}
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">  
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        
+        </head>
+    <body>
+      {%block content%}
+    <div class="about container">
+        <h1 class="text-center pb-5">ABOUT US</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-12">
+                    <img src="{% static "./img/pexels-pixabay-40568.jpg" %}" alt="..." height="400px" width="100%">
+                </div>
+                <div class="col-lg-6 col-12 ">
+                     <h2 class="text-center pt-5">ADVANCED TECHNOLOGY</h2>
+                    Hospital ensures to provide the highest quality of care and a transformative experience for all your healthcare needs.
+                    Our multi-specialty hospital equipped with specialized doctors,
+                    and world-class technology, bring global standards of medical care to our patients.
+                </div>
+        
+                <div class="col-lg-6 col-12 ">
+                    <h2 class="text-center pt-5">HEALTHCARE SOLUTIONS</h2>
+                    No other epithet other than 'at the affordable reach of the common man' would suit the
+                    bounteous services sublimated in charity rendered by CITY International Hospital.
+                    It is exalted with the pride and glory of being the one and only one hospital in Calicut 
+                    that offers quality medical treatment to the public
+                    at the most affordable expense.
+                </div>
+                    <div class="col-lg-6 col-12">
+                        <img src="{% static "./img/pexel.jpg" %}" alt="..." height="400px" width="100%">
+                    </div>
+            </div>
+        </div>
+       
+      
+    
+    </div>
+    
+{% endblock %}         
+        
+        <script src="" async defer></script>
+    </body>
+</html>
